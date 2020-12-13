@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@500&family=IBM+Plex+Serif:wght@300&family=Karla&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+:root {
+	--clr-primary: #D79921;
+	--clr-text: #EBDBB2;
+	--clr-background: #282828;
+	--clr-card-background: #333333;
+	--border-radius: 0.3rem;
+}
+
+*,
+*:before,
+*:after {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background: var(--clr-background);
+	color: var(--clr-text);
+}
+
+main {
+	margin: 2rem;
+}
+
+h1, h3 {
+	text-align: center;
+	line-height: 2.5rem;
+}
+
+main > h1 {
+	font-family: "IBM Plex Sans", sans-serif;
+	font-weight: 500;
+	font-size: 2.8rem;
+	margin-top: 4rem;
+}
+
+main > h3 {
+	font-family: "IBM Plex Serif", serif;
+	font-weight: 300;
+	font-size: 1.5rem;
+}
+
+
+.wrapper {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin-top: 1rem;
+	margin-bottom: 1rem;
+}
+
+hr {
+	width: 15rem;
+	border-color: var(--clr-text);
+}
+
+.info-card {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	background-color: var(--clr-card-background);
+	border-radius: var(--border-radius);
+	border-bottom: 0.3em solid var(--clr-primary);
+	width: 8.3rem;
+	height: 10rem;
+	padding: 2rem;
+	text-align: center;
+	position: relative;
+	margin: 0.5rem;
+}
+
+.icon {
+	font-size: 3rem;
+	color: var(--clr-primary);
+}
+
+.icon-text {
+	font-family: "Fjalla One", sans-serif;
+	font-weight: 400;
+}
+
+.title {
+	font-family: "Open Sans", sans-serif;
+	font-weight: 400;
+	font-size: 0.8rem;
+	line-height: 0.5rem;
+	white-space: nowrap;
+	height: 1rem;
+}
+
+a {
+	text-decoration: none;
+	color: var(--clr-text);
+}
